@@ -23,11 +23,47 @@
     .menu-link {
       text-transform: capitalize;
     }
+    .burger {
+        display: none;
+        visibility: hidden;
+      }
   }
 
-  @media only screen and (min-width: 768px) {
-    .burger {
-      display: none;
-      visibility: hidden;
+ 
+
+
+  @media screen and (max-width: 768px) {
+
+    button#switch {
+      margin-right: 0;
     }
-  }  
+
+    /*==== Hero area css ===*/
+    .hero-section{
+        margin-top: 200px;
+    }
+    .banner-column{
+      display: block;
+    }
+    .banner-inner {
+       text-align: center;
+       margin-top: 20px;
+    }
+  
+    .heading-xl {
+       font-size: 2rem;
+    }
+  
+    .paragraph {
+       font-size: 0.9rem;
+    }
+    .hero-img {
+      flex: 1;
+      text-align: center;
+      margin: 20px auto;
+    }
+
+  }
+
+
+ 

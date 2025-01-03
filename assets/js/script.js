@@ -29,3 +29,28 @@ window.addEventListener("resize", () => {
       }
    }
 });
+
+
+const toggleButton = document.getElementById('switch');
+const lightIcon = document.querySelector('.switch-light');
+const darkIcon = document.querySelector('.switch-dark');
+
+// Check and apply the saved theme on page load
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+  document.body.classList.add('dark-mode');
+  lightIcon.style.display = 'none';
+  darkIcon.style.display = 'inline';
+}
+
+// Toggle theme on button click
+toggleButton.addEventListener('click', () => {
+  const isDarkMode = document.body.classList.toggle('dark-mode');
+
+  // Toggle icon visibility
+  lightIcon.style.display = isDarkMode ? 'none' : 'inline';
+  darkIcon.style.display = isDarkMode ? 'inline' : 'none';
+
+  // Save the theme preference
+  localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+});
