@@ -403,8 +403,8 @@ body {
   align-items: center;
   gap: 15px;
 }
-.happiness-badge img{
-    width: 20px;
+.happiness-badge img {
+  width: 20px;
 }
 .badge-title {
   color: var(--color-text-title);
@@ -462,7 +462,7 @@ body {
 .workout-badge {
   position: absolute;
   top: 30%;
-  right:5%;
+  right: 5%;
   padding: 15px;
   border-radius: 15px;
   background-color: var(--color-bg-badge);
@@ -471,18 +471,70 @@ body {
   gap: 15px;
   z-index: 66;
 }
-.workout-icon{
-    width: 30px !important;
+.workout-icon {
+  width: 30px !important;
 }
 .workout-badge-two {
-    position: absolute;
-    bottom: 20%;
-    left:5%;
-    padding: 15px;
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: var(--color-bg-badge);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 66;
+}
+.newsletter-section{
+    background: var(--color-bg-button);
+    padding: 50px 15%;
     border-radius: 15px;
-    background-color: var(--color-bg-badge);
+    text-align: center;
+
+}
+.newsletter-section h3{
+    color: var(--color-bg-white);
+    font-size: 40px;
+}
+.newsletter-section p{
+    color: var(--color-text-dark);
+}
+.newsletter-form{
     display: flex;
     align-items: center;
-    gap: 15px;
-    z-index: 66;
-  }
+    justify-content: center;
+    width: 70%;
+    height: 60px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.input-field{ 
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    width: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+}
+.form-btn{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    background: var(--color-bg-button);
+    color: var(--color-bg-white);
+    cursor: pointer;
+}
