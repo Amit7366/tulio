@@ -569,3 +569,20 @@ body {
     margin-top: 10px;
     color: var(--color-text-paragraph);
 }
+.footer-bar{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-top: 2px solid var(--color-text-paragraph);
+}
+.social-media-box{
+    float: left;
+}
+.social-media-box a{
+    display: inline-block;
+    margin-right: 15px;
+}
+.footer-bar p{
+    color: var(--color-text-paragraph);
+}
