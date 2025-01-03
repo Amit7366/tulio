@@ -26,7 +26,8 @@
 }
 .dark-mode {
     --color-bg-white: #14092b;
-    --text-color: #ffffff;
+    --color-text-title: #D1C0F1;
+    --color-text-paragraph: #A094B8;
   }
 
 body{
@@ -122,8 +123,17 @@ background-color: var(--color-bg-white);
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
-  color: inherit;
+  color: var(--color-text-title);
   transition: all 0.3s ease;
+}
+.dark-mode .menu-link{
+    color: var(--color-text-white);
+}
+.dark-mode .menu-link.active {
+    background: var(--color-bg-button); /* Gradient colors */
+      -webkit-background-clip: text; /* Clip the background to the text (WebKit browsers) */
+      background-clip: text; /* Standard property */
+      color: transparent; /* Make the text itself transparent */
 }
 .head-icon {
   display: flex;
