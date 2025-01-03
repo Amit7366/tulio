@@ -82,8 +82,6 @@ body {
   color: var(--color-bg-blue);
 }
 
-
-
 .menu {
   position: fixed;
   top: 0;
@@ -97,8 +95,6 @@ body {
   box-shadow: var(--shadow-medium);
   transition: all 0.4s ease-in-out;
 }
-
-
 
 .menu.is-active {
   left: 0;
@@ -388,12 +384,12 @@ body {
   gap: 20px;
   padding: 70px 0;
 }
-.happiness-left img{
-    width: 80%;
+.happiness-left img {
+  width: 80%;
 }
 .happiness-left {
-  position: relative;
   text-align: center;
+  position: relative;
 }
 
 .happiness-badge {
@@ -407,32 +403,86 @@ body {
   align-items: center;
   gap: 15px;
 }
-.badge-title{
-    color: var(--color-text-title);
+.happiness-badge img{
+    width: 20px;
 }
-.badge-text{
-    background: var(--color-bg-button); /* Gradient colors */
-    -webkit-background-clip: text; /* Clip the background to the text (WebKit browsers) */
-    background-clip: text; /* Standard property */
-    color: transparent; /* Make the text itself transparent */
+.badge-title {
+  color: var(--color-text-title);
+}
+.badge-text {
+  background: var(--color-bg-button); /* Gradient colors */
+  -webkit-background-clip: text; /* Clip the background to the text (WebKit browsers) */
+  background-clip: text; /* Standard property */
+  color: transparent; /* Make the text itself transparent */
 }
 .happiness-badge-two {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: var(--color-bg-badge);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.happiness-title {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: var(--color-text-title);
+}
+.happiness-text {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: var(--color-text-paragraph);
+}
+/* workout section  */
+.workout-right {
+  position: relative;
+  width: 50%;
+  height: 600px;
+}
+.workout-img-one {
+  position: absolute;
+  left: 0;
+  top: 75px;
+  width: 100%;
+  height: 250px;
+  z-index: 55;
+}
+.workout-img-two {
+  position: absolute;
+  right: 0;
+  bottom: 75px;
+  width: 100%;
+  height: 250px;
+  z-index: 44;
+}
+.workout-badge {
+  position: absolute;
+  top: 30%;
+  right:5%;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: var(--color-bg-badge);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 66;
+}
+.workout-icon{
+    width: 30px !important;
+}
+.workout-badge-two {
     position: absolute;
-    bottom: 30px;
-    right: 0;
+    bottom: 20%;
+    left:5%;
     padding: 15px;
     border-radius: 15px;
     background-color: var(--color-bg-badge);
     display: flex;
     align-items: center;
     gap: 15px;
-  }
-  .happiness-title{
-    font-size: 50px;
-    font-weight: 500;
-    margin-bottom: 15px;
-  }
-  .happiness-text{
-    font-size: 15px;
-    margin-bottom: 15px;
+    z-index: 66;
   }
