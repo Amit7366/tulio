@@ -36,7 +36,7 @@
 
   /*==== Hero area css ===*/
   .hero-section {
-    margin-top: 200px;
+    margin-top: 0px;
   }
   .banner-column {
     display: block;
@@ -58,4 +58,29 @@
     text-align: center;
     margin: 20px auto;
   }
+  .banner-info {
+    justify-content: center;
+  }
+  .number-section {
+    grid-template-columns: 100%;
+  }
+  .btn-new {
+    height: 100px;
+  }
+  .number-inner img {
+    max-width: 80%;
+  }
+  .happiness-section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .happiness-title,
+  .happiness-text{
+    text-align: center;
+}
+.btn{
+    margin: 0 auto;
+}
 }
