@@ -1,0 +1,33 @@
+@media only screen and (min-width: 768px) {
+    .menu {
+      position: relative;
+      top: 0;
+      left: 0;
+      /* width: auto; */
+      height: auto;
+      padding: 0rem;
+      margin-left: auto;
+      background: none;
+      box-shadow: none;
+      transition: none;
+    }
+  
+    .menu-inner {
+      display: flex;
+      flex-direction: row;
+      -moz-column-gap: 2rem;
+      column-gap: 2rem;
+      margin: 0 auto;
+    }
+  
+    .menu-link {
+      text-transform: capitalize;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .burger {
+      display: none;
+      visibility: hidden;
+    }
+  }  
