@@ -107,6 +107,13 @@
     bottom: 10%;
     left: 5%;
   }
+  .instagram-bottom{
+    flex-direction: column;
+  }
+  .instagram-bottom-img{
+    width: 70%;
+  }
+
   .newsletter-form{
     width: 100%;
     flex-direction: column;
